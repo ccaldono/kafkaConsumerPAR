@@ -1,4 +1,4 @@
-package co.edu.unicauca.kafkaconsumerpar.models;
+package pwp.software.kafkaconsumerpar.models;
 
 public class Estructura {
     private int nit;

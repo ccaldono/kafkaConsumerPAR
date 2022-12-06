@@ -8,7 +8,7 @@
         <version>2.7.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>co.edu.unicauca</groupId>
+    <groupId>pwp.software</groupId>
     <artifactId>KafkaConsumerPAR</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>KafkaConsumerPAR</name>
@@ -35,6 +35,17 @@
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>2.8.8</version>
         </dependency>
     </dependencies>
 

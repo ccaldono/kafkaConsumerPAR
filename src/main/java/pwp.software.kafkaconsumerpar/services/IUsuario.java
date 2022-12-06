@@ -1,6 +1,6 @@
-package co.edu.unicauca.kafkaconsumerpar.services;
+package pwp.software.kafkaconsumerpar.services;
 
-import co.edu.unicauca.kafkaconsumerpar.models.Externo;
+import pwp.software.kafkaconsumerpar.models.Externo;
 
 import java.util.List;
 

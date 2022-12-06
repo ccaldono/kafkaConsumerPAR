@@ -1,6 +1,6 @@
-package co.edu.unicauca.kafkaconsumerpar.config;
+package pwp.software.kafkaconsumerpar.config;
 
-import co.edu.unicauca.kafkaconsumerpar.models.Estructura;
+import pwp.software.kafkaconsumerpar.models.Estructura;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
@@ -42,9 +42,10 @@ public class KafkaConsumerConfig {
 
         ConcurrentKafkaListenerContainerFactory<String, Estructura> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
+        factory.setAutoStartup(false);
         factory.setConsumerFactory(estructuraConsumerFactory());
         factory.setBatchListener(true);
-        factory.setAutoStartup(false);
         return factory;
     }
+
 }
